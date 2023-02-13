@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clock {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    background-image: url('timer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+.stop,
+.start {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url('btn1-off.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 75px;
+    left: 66px;
+    cursor: pointer;
+}
+
+.stop:active {
+    background-image: url('btn1-on.png');
+}
+
+.start {
+    background-image: url('btn2-off.png');
+    left: 276px;
+}
+
+.start:active {
+    background-image: url('btn2-on.png');
+}
+
+.reset {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url('btn3-off.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: -6px;
+    left: 147px;
+    cursor: pointer;
+}
+
+.reset:active {
+    background-image: url('btn3-on.png');
+}
+
+#min {
+    display: flex;
+    margin: 0 auto;
+    height: 80px;
+    position: absolute;
+    top: 149px;
+    left: 192px;
+    z-index: 5;
+}
+
+.start-span, .stop-span, .reset-span{
+    display: block;
+    position: absolute;
+    top:-20px;
+}
+
+.reset-span{
+    top:-10px;
+}
+
+#sec {
+    display: flex;
+    margin: 0 auto;
+    height: 230px;
+    position: absolute;
+    top: 115px;
+    left: 188px;
+    z-index: 9;
+}
+
+#milsec {
+    display: flex;
+    margin: 0 auto;
+    height: 210px;
+    position: absolute;
+    top: 121px;
+    left: 195px;
+    z-index: 7;
+}
